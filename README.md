@@ -5,7 +5,7 @@
 2. Restructured the solution and separated the logic to multiple files by adding service layer.
 3. Combined the solution for problem 1 and 2 by giving user a choice to calculate cost only or calculate both cost and time.
 4. Added option to insert new coupons.
-5. Added more test cases to cover more scenario for both problem.
+5. Added more test cases to cover more scenario for both problem.  
 <b>------------------</b>
 
 <b>----- Note -----</b>  
