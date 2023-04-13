@@ -8,7 +8,7 @@
 5. Added more test cases to cover more scenario for both problem.
 <b>------------------</b>
 
-<b>----- Note -----</b>
+<b>----- Note -----</b>  
 For the delivery time calculation of below example input. It should produce the below output (similar to my previous solution).
 As the requirement assumed the destinations are on a single route. Hence in the same trip, packages that are at the same distance should arrived at the same time.
 
@@ -26,7 +26,7 @@ PKG3 35 665 2.5
 
 <b>----------------</b>
 
-<b>-- Introduction --</b>
+<b>-- Introduction --</b>  
 The project is written with Go.
 
 You can run the program by opening the executable main.exe.
@@ -56,7 +56,7 @@ PKG4 105 1395 0.85
 PKG5 0 2125 4.19  
 
 
-<b>-- Thought Process --</b>
+<b>-- Thought Process --</b>  
 The first problem require us to calculate the delivery cost based on the given weight, distance, and discount coupon. Weight and distance are straight forward. To calculate correctly based on the coupon offerId, I store the information of the coupon into a Map so I can retrieve it easily based on the user's input. Then I check if the given weight/distance matched the coupon's criteria, if yes then I applied the discount to the delivery cost calculation.
 
 For the second problem, vehicle, maximum speed, and maximum carriable weight are introduced to calculate the time packages would be delivered. In addition to the problem 1 calculation, I first find out what could be the possible combination of packages that falls within the max carriable weight. I've decided to set the optimum number of packages per combination/trip is (Number of Packages/Number of vehicle). Example if there are 9 packages and 2 vehicle available, at most 1 vehicle can carry 5 packages, given that the weight is within the max carriable weight.
